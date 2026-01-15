@@ -14,7 +14,7 @@ draw = function(){
    background(255,255,255,0);
   
   //fish 1
-  if(fish1X > 10){fish1X=400;}
+  if(fish1X < -700){fish1X=400;}
   fill(211, 47, 47)
   ellipse(200 + fish1X, 100, 50, 50, fish1X)
   triangle(225 + fish1X, 100, 235 + fish1X, 75, 235 + fish1X, 125, fish1X)
@@ -22,7 +22,7 @@ draw = function(){
   ellipse(190 + fish1X, 90, 5, 10, fish1X);
 
   //fish 2
-  if(fish2X > 10){fish2X=400;}
+  if(fish2X < -700){fish2X=400;}
   translate(200, 100, 0)
   fill(76, 175, 80)
   ellipse(200 + fish2X, 100, 50, 50, fish2X)
@@ -32,7 +32,7 @@ draw = function(){
   translate(-200, -100, 0);
 
   //fish 3
-  if(fish3X > 10){fish3X=400;}
+  if(fish3X < -700){fish3X=400;}
   translate(100, 200, 0)
   fill(2, 136, 209)
   ellipse(200 + fish3X, 100, 50, 50, fish3X)
